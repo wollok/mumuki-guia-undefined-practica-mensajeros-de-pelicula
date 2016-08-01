@@ -8,3 +8,9 @@ Cuando Roberto entrega un paquete (a donde sea) viajando en bicicleta, baja de p
 Nunca le pasa nada cuando entrega un paquete.
 * Neo vuela, así que no pesa nada, y anda con celular el muy canchero. El tema es que a veces no tiene suficiente crédito para hacer llamadas.
 Puede ser que se vea afectado por entregar un paquete, depende de dónde lo tenga que llevar. Cuando hace una llamada su crédito baja $5.
+
+
+Los destinos posibles a los cuales se envía actualmente un paquete son los siguientes:
+
+* Puente de Brooklyn: deja pasar a todo lo que pese hasta una tonelada. No produce efectos extra entregar un paquete a este destino.
+* La Matrix: deja entrar a quien pueda hacer una llamada. Para entregar un paquete a este destino hay que llamar por teléfono.
