@@ -12,4 +12,4 @@ paquete.puedeSerEntregadoPor(chuckNorris)
 
 > Nota: Para la lógica de roberto queremos que desarrolles tu creatividad objetosa :) Como no podemos adivinar cómo vas a modelarlo, además te pedimos que completes los métodos indicados en el objeto fixture, que vamos a usar desde nuestras pruebas.
 >
-> Además copiá tu código de puntos anteriores para (por lo menos) paquete, laMatrix y puenteDeBrooklin, así podemos probar todo junto.
+> Además copiá tu código de puntos anteriores para paquete, neo, laMatrix y puenteDeBrooklin, así podemos probar todo junto.
