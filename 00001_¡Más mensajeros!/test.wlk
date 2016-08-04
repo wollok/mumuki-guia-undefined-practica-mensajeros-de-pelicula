@@ -1,13 +1,3 @@
-test 'el paquete a la matrix puede ser entregado por chuckNorris' {
-  paquete.destino(laMatrix)
-  assert.that(paquete.puedeSerEntregadoPor(chuckNorris))
-}
-
-test 'el paquete al puente puede ser entregado por chuckNorris' {
-  paquete.destino(puenteDeBrooklin)
-  assert.that(paquete.puedeSerEntregadoPor(chuckNorris))
-}
-
 test 'el paquete a la matrix no puede ser entregado por roberto' {
   paquete.destino(laMatrix)
   assert.that(paquete.puedeSerEntregadoPor(roberto))
