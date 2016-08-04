@@ -1,6 +1,6 @@
 test 'el paquete a la matrix no puede ser entregado por roberto' {
   paquete.destino(laMatrix)
-  assert.that(paquete.puedeSerEntregadoPor(roberto))
+  assert.notThat(paquete.puedeSerEntregadoPor(roberto))
 }
 
 test 'el paquete al puente puede ser entregado por roberto en bici' {
@@ -18,7 +18,7 @@ test 'el paquete al puente puede ser entregado por roberto en el camión liviano
 test 'el paquete al puente no puede ser entregado por roberto en el camión pesado' {
   paquete.destino(puenteDeBrooklin)
   fixture.robertoTieneCamionCon2Acoplados()
-  assert.that(paquete.puedeSerEntregadoPor(roberto))
+  assert.notThat(paquete.puedeSerEntregadoPor(roberto))
 }
 
 test 'neo puede entrar a la matrix sólo si tiene crédito' {
