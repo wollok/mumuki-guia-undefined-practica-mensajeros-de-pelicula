@@ -5,7 +5,12 @@ Sabemos que La Matrix deja entrar a quien pueda hacer una llamada. Neo anda con 
 Se quiere poder hacer lo siguiente:
 
 ```wollok
-laMatrix.dejaEntrar(neo) //debería retornar true, porque sólo tiene $7
-neo.llamar()             //el crédito de neo quedaría en $2
-laMatrix.dejaEntrar(neo) //debería retornar false, porque no le alcanza para llamar
+ム laMatrix.dejaEntrar(neo) 
+=> true //porque sólo tiene $7
+
+ム neo.llamar()
+=> //su crédito debería quedar en $2
+
+ム laMatrix.dejaEntrar(neo) 
+=> false //porque no le alcanza para llamar
 ```
