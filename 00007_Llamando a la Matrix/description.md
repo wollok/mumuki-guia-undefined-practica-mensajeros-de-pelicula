@@ -1,6 +1,7 @@
 Arrancamos tranqui, con un único mensajero, llamado `neo`, y un único destino, `laMatrix` :sunglasses:
 
 Sabemos que:
+
   * `laMatrix` deja entrar a quien pueda hacer una llamada. 
   * `neo` anda con celular el muy canchero (pero sólo le puso 7 pesos de carga), y pero a veces no tiene suficiente crédito para hacer una llamada. Cuando la hace su crédito baja$5.
 
