@@ -1,4 +1,11 @@
-Contratamos a Roberto, que inicialmente pesa 80 kilos y viaja en bicicleta ó camión. Su peso es el suyo propio más el peso de su vehículo. La bicicleta pesa 1 kilo, el camión pesa 100 kilos más 500 kilos por cada acoplado que tenga. Además Roberto no tiene un mango, gracias que tiene cubiertas, así que no puede llamar a nadie. Tené en cuenta que el peso de Roberto debe poder cambiar.
+Contratamos a `roberto`, que inicialmente pesa 80 kilos y viaja en bicicleta ó camión. 
+
+Sabemos que: 
+
+* su peso es el suyo propio más el peso de su vehículo. 
+  * la bicicleta pesa 1 kilo
+  * el camión pesa 100 kilos más 500 kilos por cada acoplado que tenga.
+* `roberto` no tiene un mango, gracias que tiene cubiertas, así que no puede llamar a nadie. Tené en cuenta que el peso de Roberto debe poder cambiar.
 
 Definí lo necesario para poder consultar:
 
