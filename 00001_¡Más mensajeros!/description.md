@@ -14,4 +14,4 @@ Y ademas, que:
 > paquete.puedeSerEntregadoPor(roberto)
 > ```
 > 
-> Además, completá el objeto fixture con las consultas indicadas. 
+> Además, completá el objeto `fixture` con las consultas indicadas. 
