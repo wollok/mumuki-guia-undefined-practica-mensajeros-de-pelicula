@@ -11,7 +11,7 @@ object unPaqueteFacil {
 }
 
     
-object unPaqueteQuisuilloso {
+object unPaqueteQuisquilloso {
   method puedeSerEntregadoPor(alguien) {
     return alguien === toto
   }

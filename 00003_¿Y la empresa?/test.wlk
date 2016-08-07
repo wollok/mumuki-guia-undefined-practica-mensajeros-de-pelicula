@@ -25,7 +25,7 @@ test "puedeEntregar es verdadero si alguien lo puede entregar" {
   enviarme.agregarEmpleado(ana)
   enviarme.agregarEmpleado(toto)
   
-  assert.that(enviarme.puedeEntregar(unPaqueteQuisuilloso))
+  assert.that(enviarme.puedeEntregar(unPaqueteQuisquilloso))
 }
 
 test "candidatosPara es vacio si nadie lo puede entregar" {
@@ -46,6 +46,6 @@ test "candidatosPara devuelve solo a aquellos que lo pueden entregar" {
   enviarme.agregarEmpleado(ana)
   enviarme.agregarEmpleado(toto)
   
-  assert.equals([toto], enviarme.candidatosPara(unPaqueteQuisuilloso))
+  assert.equals([toto], enviarme.candidatosPara(unPaqueteQuisquilloso))
 }
 
