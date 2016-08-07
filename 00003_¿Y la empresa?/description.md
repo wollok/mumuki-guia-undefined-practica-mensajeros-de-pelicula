@@ -7,10 +7,13 @@ Cuando a `enviarme` le encargan un envío, ésta elige al mensajero más adecuad
 > ```wollok
 > ム enviarme.empleados()
 > => [] // inicialmente no tiene empleados
+>
 > ム enviarme.agregarEmpleado(neo)
 > => // agrega a neo como empleado
+>
 > ム enviarme.puedeEntregar(paquete) 
 > => true //nos dice si alguno de los empleados puede entregar el paquete
+>
 > ム enviarme.candidatosPara(paquete) 
 > => [neo, ... //nos dice cuales empleados pueden entregar ese paquete
 > ```
