@@ -1,7 +1,8 @@
 Contratamos a `roberto`, que inicialmente pesa 80 kilos y viaja en bicicleta ó camión. Sabemos que: 
 
 * su peso es el suyo propio más el peso de su vehículo. 
-* `roberto` no tiene un mango, gracias que tiene cubiertas, así que no puede llamar a nadie. Tené en cuenta que el peso de Roberto debe poder cambiar.
+* `roberto` no tiene un mango, gracias que tiene cubiertas, así que no puede llamar a nadie. 
+* el peso de Roberto debe poder cambiar.
 
 En cuanto a los vehículos, sabemos que: 
 
