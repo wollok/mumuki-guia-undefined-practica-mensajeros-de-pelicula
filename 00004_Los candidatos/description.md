@@ -1,1 +1,0 @@
-Saber los mensajeros candidatos de una mensajería para entregar un paquete, que son aquellos mensajeros capaces de hacerlo.

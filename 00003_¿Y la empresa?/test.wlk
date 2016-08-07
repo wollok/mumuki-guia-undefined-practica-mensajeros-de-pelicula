@@ -1,42 +1,46 @@
-test 'el paquete a la matrix no puede ser entregado por roberto' {
-  paquete.destino(laMatrix)
-  assert.notThat(paquete.puedeSerEntregadoPor(roberto))
+test "inicialmente enviarme no tiene empleados" {
+  assert.equals([], enviarme.empleados())
 }
 
-test 'el paquete al puente puede ser entregado por roberto en bici' {
-  paquete.destino(puenteDeBrooklin)
-  fixture.robertoTieneBici()
-  assert.that(paquete.puedeSerEntregadoPor(roberto))
+test "agregarEmpleado agrega un empleado" {
+  enviarme.agregarEmpleado(ana)
+  enviarme.agregarEmpleado(toto)
+  
+  assert.equals([ana, toto], enviarme.empleados())
 }
 
-test 'el paquete al puente puede ser entregado por roberto en el camión liviano' {
-  paquete.destino(puenteDeBrooklin)
-  fixture.robertoTieneCamionCon1Acoplado()
-  assert.that(paquete.puedeSerEntregadoPor(roberto))
+test "puedeEntregar es falso si nadie lo puede entregar" {
+  enviarme.agregarEmpleado(ana)
+  enviarme.agregarEmpleado(toto)
+  
+  assert.that(!enviarme.puedeEntregar(unPaqueteDificil))
 }
 
-test 'el paquete al puente no puede ser entregado por roberto en el camión pesado' {
-  paquete.destino(puenteDeBrooklin)
-  fixture.robertoTieneCamionCon2Acoplados()
-  assert.notThat(paquete.puedeSerEntregadoPor(roberto))
+test "puedeEntregar es verdadero si alguien lo puede entregar" {
+  enviarme.agregarEmpleado(ana)
+  enviarme.agregarEmpleado(toto)
+  
+  assert.that(enviarme.puedeEntregar(unPaqueteQuisuilloso))
 }
 
-test 'neo puede entrar a la matrix sólo si tiene crédito' {
-  assert.that(laMatrix.dejaEntrar(neo))
-  neo.llamar()
-  assert.notThat(laMatrix.dejaEntrar(neo))
+test "candidatosPara es vacio si nadie lo puede entregar" {
+   enviarme.agregarEmpleado(ana)
+  enviarme.agregarEmpleado(toto)
+  
+  assert.equals([], enviarme.candidatosPara(unPaqueteDificil))
 }
 
-test 'neo puede entrar al puente de brooklin' {
-  assert.that(puenteDeBrooklin.dejaEntrar(neo))
+test "candidatosPara devuelve a todos si todos pueden entregarlo" {
+  enviarme.agregarEmpleado(ana)
+  enviarme.agregarEmpleado(toto)
+  
+  assert.equals([ana, toto], enviarme.candidatosPara(unPaqueteFacil))
 }
 
-test 'el paquete a la matrix puede ser entregado por neo' {
-  paquete.destino(laMatrix)
-  assert.that(paquete.puedeSerEntregadoPor(neo))
+test "candidatosPara devuelve solo a aquellos que lo pueden entregar" {
+  enviarme.agregarEmpleado(ana)
+  enviarme.agregarEmpleado(toto)
+  
+  assert.equals([toto], enviarme.candidatosPara(unPaqueteQuisuilloso))
 }
 
-test 'el paquete al puente puede ser entregado por neo' {
-  paquete.destino(puenteDeBrooklin)
-  assert.that(paquete.puedeSerEntregadoPor(neo))
-}

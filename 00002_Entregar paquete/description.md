@@ -1,1 +1,0 @@
-Hacer que un mensajero entregue un paquete (asumiendo que puede hacerlo) y sufra los efectos correspondientes.              
