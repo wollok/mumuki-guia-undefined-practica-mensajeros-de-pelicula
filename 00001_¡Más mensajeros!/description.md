@@ -8,12 +8,10 @@ Y ademas, que:
 * la bicicleta pesa 1 kilo
 * el camión pesa 100 kilos más 500 kilos por cada acoplado que tenga.
 
-Definí lo necesario para poder consultar:
-
-```wollok
-paquete.puedeSerEntregadoPor(roberto)
-```
-
-> Nota: Para la lógica de roberto queremos que desarrolles tu creatividad objetosa :) Como no podemos adivinar cómo vas a modelarlo, aparte te pedimos que completes los métodos indicados en el objeto fixture, que vamos a usar desde nuestras pruebas.
->
-> Además copiá tu código de puntos anteriores para paquete, neo, laMatrix y puenteDeBrooklin, así podemos probar todo junto.
+> Declará lo necesario para poder consultar:
+> 
+> ```wollok
+> paquete.puedeSerEntregadoPor(roberto)
+> ```
+> 
+> Además, completá el objeto fixture con las consultas indicadas. 
