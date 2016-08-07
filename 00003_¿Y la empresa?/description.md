@@ -1,4 +1,6 @@
-Todos estos mensajeros (y muchos más) trabajan para `enviarme`, empresa de envíos de paquetes. Cuando a `enviarme` le encargan un envío, ésta elige al mensajero más adecuado. Por eso es que necesitamos...
+Todos estos mensajeros (y muchos más) trabajan para `enviarme`, empresa de envíos de paquetes. 
+
+Cuando a `enviarme` le encargan un envío, ésta elige al mensajero más adecuado. Por eso es que necesitamos...
 
 > ...agregar al objeto `enviarme`, de forma que pueda responder las siguientes consultas: 
 > 
