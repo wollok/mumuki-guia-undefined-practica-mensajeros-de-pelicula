@@ -1,6 +1,11 @@
+test "existe el objeto enviarme" {
+  enviarme
+}
+
 test "inicialmente enviarme no tiene empleados" {
   assert.equals([], enviarme.empleados())
 }
+
 
 test "agregarEmpleado agrega un empleado" {
   enviarme.agregarEmpleado(ana)
