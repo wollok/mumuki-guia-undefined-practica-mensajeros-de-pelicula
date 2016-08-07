@@ -1,6 +1,4 @@
-Contratamos a `roberto`, que inicialmente pesa 80 kilos y viaja en bicicleta ó camión. 
-
-Sabemos que: 
+Contratamos a `roberto`, que inicialmente pesa 80 kilos y viaja en bicicleta ó camión. Sabemos que: 
 
 * su peso es el suyo propio más el peso de su vehículo. 
   * la bicicleta pesa 1 kilo
