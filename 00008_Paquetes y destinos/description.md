@@ -5,8 +5,8 @@ Queremos saber si `neo` podría entregar este paquete, lo cual se cumple si pued
 > Agregá lo necesario para que se pueda consultar:
 > 
 > ```wollok
-> paquete.destino(laMatrix)
+> paquete.destino(laMatrix) //le dice que su destino es laMatrix
 > paquete.puedeSerEntregadoPor(neo)
-> paquete.destino(puenteDeBrooklin)
+> paquete.destino(puenteDeBrooklin) //cambia su destino 
 > paquete.puedeSerEntregadoPor(neo)
 > ```
