@@ -1,9 +1,9 @@
-Arrancamos tranqui, con un único mensajero, llamado `neo`, y un único destino, `laMatrix` :sunglasses:. Sabemos que:
+Arrancamos tranqui, con `neo` y `laMatrix` :sunglasses:. Sabemos que:
 
   * `laMatrix` deja entrar a quien pueda hacer una llamada. 
   * `neo` anda con celular el muy canchero (pero sólo le puso 7 pesos de carga), y pero a veces no tiene suficiente crédito para hacer una llamada. Cuando la hace su crédito baja$5.
 
-> Imlementá los objetos necesarios para que esto sea posible:
+> Implementá los objetos necesarios para que sea posible:
 > 
 > ```wollok
 > ム laMatrix.dejaEntrar(neo) 
