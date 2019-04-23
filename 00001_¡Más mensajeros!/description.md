@@ -17,5 +17,5 @@ En cuanto a los vehículos, sabemos que:
 > paquete.puedeSerEntregadoPor(roberto)
 > ```
 > 
-> Además, completá el objeto `fixture` con las consultas indicadas. 
+> Además, completá un objeto `prueba` con las consultas indicadas. 
 >

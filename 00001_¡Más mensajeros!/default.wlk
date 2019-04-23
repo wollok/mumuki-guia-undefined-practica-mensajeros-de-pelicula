@@ -1,4 +1,4 @@
-object fixture {
+object prueba {
   method robertoTieneBici(){
     // configurá a roberto acá
   }
