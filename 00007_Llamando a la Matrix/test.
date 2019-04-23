@@ -1,0 +1,8 @@
+test 'neo puede entrar a la matrix cuando tiene crédito' {
+  assert.that(laMatrix.dejaEntrar(neo))
+}
+
+test 'neo no puede entrar a la matrix si hace una llamada y se queda sin crédito' {
+  neo.llamar()
+  assert.notThat(laMatrix.dejaEntrar(neo))
+}
