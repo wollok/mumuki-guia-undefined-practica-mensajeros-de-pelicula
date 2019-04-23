@@ -13,7 +13,7 @@ object unPaqueteFacil {
     
 object unPaqueteQuisquilloso {
   method puedeSerEntregadoPor(alguien) {
-    return alguien === toto
+    return alguien == toto
   }
 }
 
