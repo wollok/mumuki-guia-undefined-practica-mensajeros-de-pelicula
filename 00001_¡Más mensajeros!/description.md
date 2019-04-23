@@ -1,6 +1,6 @@
 ![roberto](https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Truckdriver.jpg/320px-Truckdriver.jpg)
 
-Contratamos a `roberto`, un camionero que inicialmente pesa 80 kilos y viaja en bicicleta ó camión. Sabemos que: 
+Contratamos a `roberto`, un camionero que inicialmente pesa 80 kilos y viaja en bicicleta o camión. Sabemos que: 
 
 * su peso es el suyo propio más el peso de su vehículo. 
 * `roberto` no tiene un mango, gracias que tiene cubiertas, así que no puede llamar a nadie. 
