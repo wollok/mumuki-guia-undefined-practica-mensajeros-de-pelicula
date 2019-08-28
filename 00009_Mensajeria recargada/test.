@@ -1,6 +1,3 @@
-describe "conjunto de tests de los mensajeros" { 
-
-	
 	test "El paqueton con dos destinos y pago de 200 esta pago" {
     paqueton.destinos([puenteDeBrooklyn, laMatrix]) 
     paqueton.pagar(200) 
@@ -22,5 +19,4 @@ describe "conjunto de tests de los mensajeros" {
 	  self.agregarMuchosMensajeros()
 		assert.notThat(mensajeria.algunoPuedeLlevarlo(paqueton))
 	}
-}
 	
