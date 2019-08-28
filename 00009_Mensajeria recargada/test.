@@ -23,7 +23,8 @@ describe "tests " {
 		assert.that(mensajeria.algunoPuedeEntregar(paquetito))
 	}
 	test "el paqueton no puede ser entregado si sólo se pagó una parte"{
-		assert.notThat(mensajeria.algunoPuedeEntregar(paqueton))
+	  paqueton.pagar(-1) 
+  	assert.notThat(mensajeria.algunoPuedeEntregar(paqueton))
 	}
 	test "el paqueton puede ser entregado si esta pagó y en la mensajeria hay mensajeros que pueden ir a todos los destinos"{
 		assert.that(mensajeria.algunoPuedeEntregar(paqueton))
