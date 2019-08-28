@@ -21,7 +21,7 @@ test "inicialmente mensajeria no tiene empleados" {
 
 test "contratar agrega un empleado" {
   mensajeria.contratar(neo)
-  assert.that(mensajeria.empleados().contains(ana))
+  assert.that(mensajeria.empleados().contains(neo))
 }
 
 test "despedir elimina a un empleado de la mensajeria" {
