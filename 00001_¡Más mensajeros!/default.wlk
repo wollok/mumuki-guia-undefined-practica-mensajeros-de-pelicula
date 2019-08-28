@@ -5,7 +5,7 @@ object prueba {
   method robertoTieneCamionCon1Acoplado(){
     // configurá a roberto acá
   }
-  method robertoTieneCamionCon2Acoplados(){
+  method unAcopladoMasParaElCamionDeRoberto(){
     // configurá a roberto acá
   }
 }
