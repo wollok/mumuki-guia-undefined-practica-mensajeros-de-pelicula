@@ -10,10 +10,6 @@ test 'neo puede entrar al puente de brooklin' {
   assert.that(puenteDeBrooklin.dejaEntrar(neo))
 }
 
-test 'el paquete impago no puede ser entregado' {
-  assert.notThat(paquete.puedeSerEntregadoPor(neo))
-}
-
 test 'el paquete originalmente está impago' {
   assert.notThat(paquete.estaPago())
 }
@@ -23,12 +19,16 @@ test 'si se paga el paquete, queda pago' {
   assert.that(paquete.estaPago())
 }
 
-test 'el paquete pago puede ser entregado por neo' {
-  paquete.pagar()
+test 'el paquete impago no puede ser entregado' {
   assert.notThat(paquete.puedeSerEntregadoPor(neo))
 }
 
-test 'el paquete al puente puede ser entregado por neo' {
+test 'el paquete pago a la matrix puede ser entregado por neo' {
+  paquete.pagar()
+  assert.that(paquete.puedeSerEntregadoPor(neo))
+}
+
+test 'el paquete pago al puente puede ser entregado por neo' {
   paquete.destino(puenteDeBrooklin)
   assert.that(paquete.puedeSerEntregadoPor(neo))
 }
