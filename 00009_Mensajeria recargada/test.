@@ -1,8 +1,12 @@
 describe "conjunto de tests de los mensajeros" { 
 
 		fixture{
-		paquete.pagar()
-		paqueton.pagar(200)
+  		paquete.pagar()
+      paqueton.pagar(150) 
+      paqueton.destinos([puenteDeBrooklyn, laMatrix]) 
+    	mensajeria.contratar(neo)
+    	mensajeria.contratar(chuck)
+    	mensajeria.contratar(roberto)
     }
     
     method agregarMuchosMensajeros(){
@@ -11,15 +15,12 @@ describe "conjunto de tests de los mensajeros" {
     	mensajeria.contratar(roberto)
 	}
 
-	test "El paqueton con dos destinos y pago de 200 esta pago" {
-    paqueton.destinos([puenteDeBrooklyn, laMatrix]) 
-    paqueton.pagar(200) 
+	test "El paqueton con dos destinos y pagos de 150 y 50 esta pago" {
+    paqueton.pagar(50) 
     assert.that(paqueton.estaPago())
 	}
 	
-	test "El paqueton con dos destinos y pago de 199 no esta pago" {
-    paqueton.destinos([puenteDeBrooklyn, laMatrix]) 
-    paqueton.pagar(199) 
+	test "El paqueton con dos destinos y pago parcial de 150 no esta pago" {
     assert.notThat(paqueton.estaPago())
 	}
 	
@@ -28,8 +29,10 @@ describe "conjunto de tests de los mensajeros" {
 		assert.that(mensajeria.algunoPuedeLlevarlo(paquetin))
 	}
 	test "el paqueton no puede ser entregado si sólo se pagó una parte"{
-	  mensajeria.contratar(chuck)
-	  self.agregarMuchosMensajeros()
 		assert.notThat(mensajeria.algunoPuedeLlevarlo(paqueton))
 	}
+	test "el paqueton puede ser entregado si esta pagó y en la mensajeria hay mensajeros que pueden ir a todos los destinos"{
+		assert.that(mensajeria.algunoPuedeLlevarlo(paqueton))
+	}
+
 }
