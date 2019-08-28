@@ -7,12 +7,9 @@ Arrancamos tranqui, con `neo` y `laMatrix` :sunglasses:. Sabemos que:
 > Implementá los objetos necesarios para que sea posible:
 > 
 > ```wollok
-> ム laMatrix.dejaEntrar(neo) 
-> => true //porque sólo tiene $7
+> laMatrix.dejaEntrar(neo)  // Devuelve true porque sólo tiene $7
 > 
-> ム neo.llamar()
-> => //su crédito disminuye 5$
+> neo.llamar()              // Su crédito disminuye 5$
 > 
-> ム laMatrix.dejaEntrar(neo) 
-> => false //porque con 2$ de credito no le alcanza para llamar
+> laMatrix.dejaEntrar(neo)  // Devuelve false porque con 2$ de credito no le alcanza para llamar
 > ```

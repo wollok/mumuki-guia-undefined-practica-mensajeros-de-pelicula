@@ -1,0 +1,37 @@
+
+describe "conjunto de tests de los mensajeros" { 
+
+	fixture{
+		paquete.pagar()
+		paqueton.pagar(200)
+    }
+    
+    method agregarMuchosMensajeros(){
+    	mensajeria.contratar(neo)
+    	mensajeria.contratar(chuck)
+    	mensajeria.contratar(roberto)
+	}
+	
+	test "El paqueton con dos destinos y pago de 200 esta pago" {
+    paqueton.destinos([puenteDeBrooklyn, laMatrix]) 
+    paqueton.pagar(200) 
+    assert.that(paqueton.estaPago())
+	}
+	
+	test "El paqueton con dos destinos y pago de 199 no esta pago" {
+    paqueton.destinos([puenteDeBrooklyn, laMatrix]) 
+    paqueton.pagar(199) 
+    assert.notThat(paqueton.estaPago())
+	}
+	
+	test "Con cualquier mensajero que haya en la mensajeria, el paquetin puede ser llevado"{
+		mensajeria.contratar("mensajero trucho")
+		assert.that(mensajeria.algunoPuedeLlevarlo(paquetin)
+	}
+	test "el paqueton no puede ser entregado si sólo se pagó una parte"{
+	  mensajeria.contratar(chuck)
+	  self.agregarMuchosMensajeros()
+		assert.notThat(mensajeria.algunoPuedeLlevarlo(paqueton))
+	}
+}
+	
