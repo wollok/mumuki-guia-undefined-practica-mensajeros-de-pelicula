@@ -32,6 +32,7 @@ describe "conjunto de tests de los mensajeros" {
 		assert.notThat(mensajeria.algunoPuedeLlevarlo(paqueton))
 	}
 	test "el paqueton puede ser entregado si esta pagó y en la mensajeria hay mensajeros que pueden ir a todos los destinos"{
+	  paqueton.pagar(50)
 		assert.that(mensajeria.algunoPuedeLlevarlo(paqueton))
 	}
 
