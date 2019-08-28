@@ -36,4 +36,47 @@ describe "conjunto de tests de los mensajeros" {
 		assert.that(mensajeria.algunoPuedeLlevarlo(paqueton))
 	}
 
+	test "los candidatos para llevar el paqueton son neo y chuck"{
+	  paqueton.pagar(50)
+		assert.equals([neo,chuck], mensajeria.candidatosPara(paqueton) )
+	}
+	test "la mensajeria no tiene sobrepeso (590 + 900 + 0) / 3 < 500"{
+    assert.notThat(mensajeria.tieneSobrepeso())
+	}
+
+	test "la mensajeria con todos puede enviar paquete"{
+    mensajeria.enviar(paquete)
+    assert.that(mensajeria.pendientes().isEmpty() )
+	}
+
+	test "la mensajeria con solo roberto no puede enviar paquete y queda pendiente"{
+    mensajeria.despedir(chuck)
+    mensajeria.despedir(neo)
+    mensajeria.enviar(paquete)
+    assert.that(mensajeria.pendientes().contains(paquete) )
+	}
+	test "La mensajeria los envia a todos los paquetes" {
+	  mensajeria.enviarTodos([paquete,paquetito,paqueton]) 
+    assert.that(mensajeria.pendientes().isEmpty() )
+  }
+
+	test "La mensajeria con solo roberto envia a paquetito, los otros quedan pendientes" {
+    mensajeria.despedir(chuck)
+    mensajeria.despedir(neo)
+	  mensajeria.enviarTodos([paquete,paquetito,paqueton]) 
+    assert.equals([paquete,paqueton], mensajeria.pendientes() )
+  }
+  test "La mensajeria con paquetes pendietes envia al mas caro que es paqueton "{
+    mensajeria.pendientes([paquete,paquetito,paqueton])
+    mensajeria.enviarPendienteCaro()
+    assert.equals([paquete,paquetito], mensajeria.pendientes() )
+  }
+  test "La mensajeria con paquetes pendietes intenta enviar al mas caro que es paqueton, pero no hay quien lo envíe porque hubo despidos"{
+    mensajeria.despedir(chuck)
+    mensajeria.despedir(neo)
+    mensajeria.pendientes([paquete,paquetito,paqueton])
+    mensajeria.enviarPendienteCaro()
+    assert.equals([paquete,paquetito,paqueton], mensajeria.pendientes() )
+  }
+
 }
