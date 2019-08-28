@@ -1,0 +1,63 @@
+test "existe el objeto mensajeria" {
+  mensajeria
+}
+
+test "existe el objeto neo" {
+  neo
+}
+
+test "existe el objeto chuck" {
+  chuck
+}
+
+test "existe el objeto roberto" {
+  roberto
+}
+
+test "inicialmente mensajeria no tiene empleados" {
+  assert.that(mensajeria.empleados().isEmpty())
+}
+
+
+test "contratar agrega un empleado" {
+  mensajeria.contratar(neo)
+  assert.that(mensajeria.empleados().contains(ana))
+}
+
+test "despedir elimina a un empleado de la mensajeria" {
+  mensajeria.contratar(neo)
+  mensajeria.despedir(neo)
+  assert.that(mensajeria.empleados().isEmpty())
+}
+
+test "despedir a todos hace que la mensajeria quede sin empleados" {
+  mensajeria.contratar(neo)
+  mensajeria.contratar(chuck)
+  mensajeria.despedirATodos()
+  assert.that(mensajeria.empleados().isEmpty())
+}
+
+test "la mensajeria con tres empleados es grande" {
+  mensajeria.contratar(neo)
+  mensajeria.contratar(chuck)
+  mensajeria.contratar(roberto)
+  assert.that(mensajeria.esGrande())
+}
+
+test "la mensajeria con dos empleados no es grande" {
+  mensajeria.contratar(neo)
+  mensajeria.contratar(chuck)
+  assert.notThat(mensajeria.esGrande())
+}
+
+test "en la mensajeria con neo y chuck, neo puede entregar el paquete" {
+  mensajeria.contratar(neo)
+  mensajeria.contratar(chuck)
+  assert.that(mensajeria.loEntregaElPrimero())
+}
+
+test "en la mensajeria con neo y chuck, el peso del ultimo es 900" {
+  mensajeria.contratar(neo)
+  mensajeria.contratar(chuck)
+  assert.equals(900,mensajeria.pesoDelUltimo())
+}
