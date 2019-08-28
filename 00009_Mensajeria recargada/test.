@@ -2,19 +2,19 @@ describe "tests " {
 
 		fixture{
   		paquete.pagar()
-      paqueton.pagar(150) 
+      paqueton.pagar(200) 
       paqueton.destinos([puenteDeBrooklyn, laMatrix]) 
     	mensajeria.contratar(neo)
     	mensajeria.contratar(chuck)
     	mensajeria.contratar(roberto)
     }
     
-   test "El paqueton con dos destinos y pagos de 150 y 50 esta pago" {
-    paqueton.pagar(50) 
+   test "El paqueton con dos destinos y pagos de 200 esta pago" {
     assert.that(paqueton.estaPago())
 	}
 	
-	test "El paqueton con dos destinos y pago parcial de 150 no esta pago" {
+	test "El paqueton con dos destinos, si paga menos de 200 no esta pago" {
+    paqueton.pagar(-1) 
     assert.notThat(paqueton.estaPago())
 	}
 	
@@ -26,12 +26,10 @@ describe "tests " {
 		assert.notThat(mensajeria.algunoPuedeEntregar(paqueton))
 	}
 	test "el paqueton puede ser entregado si esta pagó y en la mensajeria hay mensajeros que pueden ir a todos los destinos"{
-	  paqueton.pagar(50)
 		assert.that(mensajeria.algunoPuedeEntregar(paqueton))
 	}
 
 	test "los candidatos para llevar el paqueton son neo y chuck"{
-	  paqueton.pagar(50)
 		assert.equals([neo,chuck], mensajeria.candidatosPara(paqueton) )
 	}
 	test "la mensajeria no tiene sobrepeso (590 + 900 + 0) / 3 < 500"{
@@ -70,7 +68,6 @@ describe "tests " {
     mensajeria.despedir(neo)
     mensajeria.pendientes([paquete,paquetito,paqueton])
     mensajeria.enviarPendienteCaro()
-	  paqueton.pagar(50)
     assert.equals([paquete,paquetito,paqueton], mensajeria.pendientes() )
   }
 
