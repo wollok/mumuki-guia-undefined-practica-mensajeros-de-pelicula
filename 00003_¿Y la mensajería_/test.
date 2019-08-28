@@ -53,6 +53,7 @@ test "la mensajeria con dos empleados no es grande" {
 test "en la mensajeria con neo y chuck, neo puede entregar el paquete" {
   mensajeria.contratar(neo)
   mensajeria.contratar(chuck)
+  paquete.pagar()
   assert.that(mensajeria.loEntregaElPrimero())
 }
 
