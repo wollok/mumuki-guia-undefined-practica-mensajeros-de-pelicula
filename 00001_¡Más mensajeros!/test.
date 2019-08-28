@@ -58,6 +58,7 @@ test 'el paquete a la matrix puede ser entregado por neo' {
 }
 
 test 'el paquete al puente puede ser entregado por neo' {
+  paquete.pagar()
   paquete.destino(puenteDeBrooklyn)
   assert.that(paquete.puedeSerEntregadoPor(neo))
 }
