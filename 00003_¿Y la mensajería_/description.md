@@ -1,4 +1,4 @@
-Ahora aparece una empresa de mensajería. Esta tiene un conjunto de mensajeros, los cuales podrían ser Roberto, Chuck y Neo. 
+Ahora aparece una empresa de mensajería. Esta tiene un conjunto de mensajeros, los cuales podrían ser Roberto, Neo y un nuevo mensajero (Chuck Norris, que pesa 900 kg y puede llamar a cualquier persona del universo con sólo llevarse el pulgar al oído y el meñique a la boca)
 
 Vamos a llamarla `mensajeria` e inicialmente no tiene mensajeros. 
 
@@ -8,7 +8,7 @@ Se necesita poder hacer:
 > ```wollok
 > mensajeria.empleados() // retorna la colección con todos sus empleados
 >
-> mensajeria.contratar(neo) // agrega a neo como empleado
+> mensajeria.contratar(chuck) // agrega a chuck como empleado
 >
 > mensajeria.despedir(unEmpleado)  // unEmpleado deja de ser empleado de la mensajeria
 >
@@ -22,3 +22,4 @@ Se necesita poder hacer:
 > ```
 >
 
+`Texto`

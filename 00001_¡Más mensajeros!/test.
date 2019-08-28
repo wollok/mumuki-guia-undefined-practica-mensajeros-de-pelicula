@@ -1,10 +1,12 @@
 test 'el paquete a la matrix no puede ser entregado por roberto' {
+  paquete.pagar()
   paquete.destino(laMatrix)
   assert.notThat(paquete.puedeSerEntregadoPor(roberto))
 }
 
 test 'el paquete al puente puede ser entregado por roberto en bici' {
-  paquete.destino(puenteDeBrooklin)
+  paquete.pagar()
+  paquete.destino(puenteDeBrooklyn)
   prueba.robertoTieneBici()
   assert.that(paquete.puedeSerEntregadoPor(roberto))
 }
@@ -15,7 +17,8 @@ test 'el peso de roberto en bici es 91' {
 }
 
 test 'el paquete al puente puede ser entregado por roberto en el camión liviano' {
-  paquete.destino(puenteDeBrooklin)
+  paquete.pagar()
+  paquete.destino(puenteDeBrooklyn)
   prueba.robertoTieneCamionCon1Acoplado()
   assert.that(paquete.puedeSerEntregadoPor(roberto))
 }
@@ -26,7 +29,8 @@ test 'el peso de roberto en el camión liviano es 500 + 90' {
 }
 
 test 'el paquete al puente no puede ser entregado por roberto en el camión pesado' {
-  paquete.destino(puenteDeBrooklin)
+  paquete.pagar()
+  paquete.destino(puenteDeBrooklyn)
   prueba.robertoTieneCamionCon1Acoplado()
   prueba.unAcopladoMasParaElCamionDeRoberto()
   assert.notThat(paquete.puedeSerEntregadoPor(roberto))
@@ -44,15 +48,16 @@ test 'neo puede entrar a la matrix sólo si tiene crédito' {
 }
 
 test 'neo puede entrar al puente de brooklin' {
-  assert.that(puenteDeBrooklin.dejaEntrar(neo))
+  assert.that(puenteDeBrooklyn.dejaEntrar(neo))
 }
 
 test 'el paquete a la matrix puede ser entregado por neo' {
+  paquete.pagar()
   paquete.destino(laMatrix)
   assert.that(paquete.puedeSerEntregadoPor(neo))
 }
 
 test 'el paquete al puente puede ser entregado por neo' {
-  paquete.destino(puenteDeBrooklin)
+  paquete.destino(puenteDeBrooklyn)
   assert.that(paquete.puedeSerEntregadoPor(neo))
 }

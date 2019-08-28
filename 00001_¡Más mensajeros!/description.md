@@ -15,7 +15,7 @@ Sabemos que:
 > roberto.peso()
 > ```
 > 
-> Además, completá la definición del objeto `prueba` con métodos que permitan configurar a los objetos de diferentes maneras, para contemplar las posibles situaciones planteadas.
+> Además, completá la definición del objeto `prueba` con métodos que permitan configurar a los objetos de diferentes maneras, para contemplar las posibles situaciones planteadas. 
 >
 > ```wollok
 > prueba.robertoTieneBici() // Hace que roberto maneje una bici

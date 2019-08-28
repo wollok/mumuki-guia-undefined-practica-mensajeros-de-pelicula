@@ -7,7 +7,7 @@ test 'neo no puede entrar a la matrix cuando tiene poco credito ' {
 }
 
 test 'neo puede entrar al puente de brooklin' {
-  assert.that(puenteDeBrooklin.dejaEntrar(neo))
+  assert.that(puenteDeBrooklyn.dejaEntrar(neo))
 }
 
 test 'el paquete originalmente está impago' {
@@ -29,7 +29,7 @@ test 'el paquete pago a la matrix puede ser entregado por neo' {
 }
 
 test 'el paquete pago al puente puede ser entregado por neo' {
-  paquete.destino(puenteDeBrooklin)
+  paquete.destino(puenteDeBrooklyn)
   paquete.pagar()
   assert.that(paquete.puedeSerEntregadoPor(neo))
 }
