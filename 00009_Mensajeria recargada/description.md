@@ -5,7 +5,7 @@ Surgen otros paquetes que la empresa necesita enviar:
 * Paquetito: es gratis, o sea, siempre está pago. Además, cualquier mensajero lo puede llevar.
 * Paqueton viajero: tiene múltiples destinos. Su precio es 100$ por cada destino. Se puede ir pagando parcialmente y se debe pagar totalmente para poder ser enviado. Además, el mensajero debe poder pasar por todos los destinos.
 
-Se sabe que el paquete original tiene un precio determinado en $50.
+Se sabe que el paquete original tiene un precio determinado en $50
 
 
 > Se necesita realizar:

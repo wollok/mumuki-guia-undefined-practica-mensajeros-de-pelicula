@@ -12,7 +12,7 @@
 	
 	test "Con cualquier mensajero que haya en la mensajeria, el paquetin puede ser llevado"{
 		mensajeria.contratar("mensajero trucho")
-		assert.that(mensajeria.algunoPuedeLlevarlo(paquetin)
+		assert.that(mensajeria.algunoPuedeLlevarlo(paquetin))
 	}
 	test "el paqueton no puede ser entregado si sólo se pagó una parte"{
 	  mensajeria.contratar(chuck)
