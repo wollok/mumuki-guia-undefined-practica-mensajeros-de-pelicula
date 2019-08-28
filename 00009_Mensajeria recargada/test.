@@ -24,9 +24,9 @@ describe "conjunto de tests de los mensajeros" {
     assert.notThat(paqueton.estaPago())
 	}
 	
-	test "Con cualquier mensajero que haya en la mensajeria, el paquetin puede ser llevado"{
+	test "Con cualquier mensajero que haya en la mensajeria, el paquetito puede ser llevado"{
 		mensajeria.contratar("mensajero trucho")
-		assert.that(mensajeria.algunoPuedeLlevarlo(paquetin))
+		assert.that(mensajeria.algunoPuedeLlevarlo(paquetito))
 	}
 	test "el paqueton no puede ser entregado si sólo se pagó una parte"{
 		assert.notThat(mensajeria.algunoPuedeLlevarlo(paqueton))
