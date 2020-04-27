@@ -19,7 +19,7 @@ describe "tests " {
 	}
 	
 	test "Con cualquier mensajero que haya en la mensajeria, el paquetito puede ser llevado"{
-		mensajeria.contratar("mensajero trucho")
+		mensajeria.contratar(mensajeroTrucho)
 		assert.that(mensajeria.algunoPuedeEntregar(paquetito))
 	}
 	test "el paqueton no puede ser entregado si sólo se pagó una parte"{
