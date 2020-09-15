@@ -6,7 +6,7 @@ Sabemos que:
 * Si viaja en bicicleta, el peso que cuenta es el suyo propio más 1, que es lo que pesa la bici. 
 * Si viaja en camión, el peso es el propio más el del camión, a razón de media tonelada (500Kg) por cada acoplado. 
 * No tiene un mango, gracias que tiene cubiertas, así que no puede llamar a nadie. 
-* El peso propio de Roberto es inicialmente de 90
+* El peso propio de Roberto es inicialmente de 90 y está en su bicicleta.
 
 > Declará lo necesario para poder realizar:
 > 
