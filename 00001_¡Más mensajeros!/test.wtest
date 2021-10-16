@@ -36,7 +36,7 @@ test 'el paquete al puente no puede ser entregado por roberto en el camión pesa
   assert.notThat(paquete.puedeSerEntregadoPor(roberto))
 }
 
-test 'el peso de roberto en el camión liviano es 1000 + 90' {
+test 'el peso de roberto en el camión pesado es 1000 + 90' {
   prueba.robertoTieneCamionCon1Acoplado()
   prueba.unAcopladoMasParaElCamionDeRoberto()
   assert.equals(1090,roberto.peso())
